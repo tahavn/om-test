@@ -1,18 +1,4 @@
-$gray: #c4c4c4;
-$blue: #5362eb;
-$dark: #0b1133;
-$white: #ffffff;
-
-$time-transition: 0.35s;
-
-$black: #232323;
-$background: #ffdf8c;
-$gray-line: #f6f6f6;
-$orange: #fe5f1e;
-
-$container-width: 90%;
-
-$duration: 0.15s;
+@import "assets/scss/variables";
 
 html {
   height: 100%;
@@ -31,6 +17,10 @@ body {
   }
 }
 
+h2, h3 {
+  margin: 0;
+}
+
 #root {
   display: flex;
   flex-direction: column;
@@ -46,6 +36,8 @@ body {
 
   &__content {
     flex-grow: 1;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   &__footer {
@@ -67,6 +59,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    min-height: 91px;
     padding: 20px 0;
   }
 
@@ -107,7 +100,6 @@ body {
 }
 
 .catalog {
-  padding: 40px 0;
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -119,11 +111,26 @@ body {
 }
 
 .product {
+  display: flex;
+  flex-direction: column;
   width: calc(33.33% - 20px);
   margin: 10px;
   padding: 20px;
   border: 1px solid $gray;
   border-radius: 10px;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 20px 0;
+  }
+
+
+  &__button {
+    margin: 20px auto 0;
+  }
 }
 
 .button {
@@ -180,8 +187,10 @@ body {
   }
 
   &_outline {
+    min-width: 140px;
     background-color: transparent;
     border-color: $orange;
+    font-size: 16px;
 
     &,
     span {
@@ -272,4 +281,9 @@ body {
       font-size: 16px;
     }
   }
+}
+.error {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #ff0000;
 }

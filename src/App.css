@@ -15,6 +15,10 @@ body {
   box-sizing: border-box;
 }
 
+h2, h3 {
+  margin: 0;
+}
+
 #root {
   display: flex;
   flex-direction: column;
@@ -30,6 +34,8 @@ body {
 }
 .page__content {
   flex-grow: 1;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .page__footer {
   margin-top: auto;
@@ -49,6 +55,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-height: 91px;
   padding: 20px 0;
 }
 .header__logo {
@@ -78,9 +85,6 @@ body {
   text-align: center;
 }
 
-.catalog {
-  padding: 40px 0;
-}
 .catalog__list {
   display: flex;
   flex-wrap: wrap;
@@ -91,11 +95,23 @@ body {
 }
 
 .product {
+  display: flex;
+  flex-direction: column;
   width: calc(33.33% - 20px);
   margin: 10px;
   padding: 20px;
   border: 1px solid #c4c4c4;
   border-radius: 10px;
+}
+.product__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 20px 0;
+}
+.product__button {
+  margin: 20px auto 0;
 }
 
 .button {
@@ -144,8 +160,10 @@ body {
   background-color: #3d3d3d;
 }
 .button_outline {
+  min-width: 140px;
   background-color: transparent;
   border-color: #fe5f1e;
+  font-size: 16px;
 }
 .button_outline,
 .button_outline span {
@@ -213,6 +231,12 @@ body {
 .button_cart span {
   font-weight: 600;
   font-size: 16px;
+}
+
+.error {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #ff0000;
 }
 
 /*# sourceMappingURL=App.css.map */

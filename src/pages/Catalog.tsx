@@ -1,6 +1,32 @@
-import React from "react";
+import React, {useEffect} from "react";
+import {useDispatch} from "react-redux";
+import fetchProducts from "../store/actions/products";
+import useTypedSelector from "../hooks/useTypedSelector";
 
 const Catalog: React.FC = () => {
+    const {products, loading, error} = useTypedSelector(state => state.products);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(fetchProducts())
+    }, []);
+
+
+    if(loading) {
+        return (
+            <div className="container">Loading</div>
+        )
+    }
+
+    if(error) {
+        return (
+            <div className="container">
+               <div className="error">{error}</div>
+            </div>
+        )
+    }
+
+
     return (
         <div className="catalog">
             <div className="container">
@@ -14,7 +40,7 @@ const Catalog: React.FC = () => {
                             <div className="product__price">10000 $</div>
                         </div>
                         <div className="product__quantity">Quantity: 12</div>
-                        <button type="button" className="button button_outline">Add to cart</button>
+                        <button type="button" className="product__button button button_outline">Add to cart</button>
                     </li>
                     <li className="catalog__item product">
                         <div className="product__thumb">
@@ -25,7 +51,7 @@ const Catalog: React.FC = () => {
                             <div className="product__price">10000 $</div>
                         </div>
                         <div className="product__quantity">Quantity: 12</div>
-                        <button type="button" className="button button_outline">Add to cart</button>
+                        <button type="button" className="product__button button button_outline">Add to cart</button>
                     </li>
                     <li className="catalog__item product">
                         <div className="product__thumb">
@@ -36,7 +62,7 @@ const Catalog: React.FC = () => {
                             <div className="product__price">10000 $</div>
                         </div>
                         <div className="product__quantity">Quantity: 12</div>
-                        <button type="button" className="button button_outline">Add to cart</button>
+                        <button type="button" className="product__button button button_outline">Add to cart</button>
                     </li>
                     <li className="catalog__item product">
                         <div className="product__thumb">
@@ -47,7 +73,7 @@ const Catalog: React.FC = () => {
                             <div className="product__price">10000 $</div>
                         </div>
                         <div className="product__quantity">Quantity: 12</div>
-                        <button type="button" className="button button_outline">Add to cart</button>
+                        <button type="button" className="product__button button button_outline">Add to cart</button>
                     </li>
                 </ul>
             </div>
