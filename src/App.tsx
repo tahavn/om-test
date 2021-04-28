@@ -9,7 +9,7 @@ import "./App.scss"
 function App() {
     return (
         <div className="page">
-            <Header/>
+            <Header />
             <main className="page__content">
                 <Route path="/" component={Catalog} exact/>
                 <Route path="/cart" component={Cart} exact/>
