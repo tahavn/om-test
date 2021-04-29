@@ -7,16 +7,16 @@ const initialState: ICartState = {
     priceTotal: 0
 }
 
-const updateCartItems = (cartItems:IProductProps[], item:IProductProps, idx:number):any[] => {
+const updateCartItems = (cartItems: IProductProps[], item: IProductProps, index: number): IProductProps[] => {
 
     if (item.quantity === 0) {
         return [
-            ...cartItems.slice(0, idx),
-            ...cartItems.slice(idx + 1)
+            ...cartItems.slice(0, index),
+            ...cartItems.slice(index + 1)
         ];
     }
 
-    if (idx === -1) {
+    if (index === -1) {
         return [
             ...cartItems,
             item
@@ -24,41 +24,51 @@ const updateCartItems = (cartItems:IProductProps[], item:IProductProps, idx:numb
     }
 
     return [
-        ...cartItems.slice(0, idx),
+        ...cartItems.slice(0, index),
         item,
-        ...cartItems.slice(idx + 1)
+        ...cartItems.slice(index + 1)
     ];
 };
 
-const updateCartItem = (product: IProductProps, item: IProductProps, num: number):IProductProps => {
+const updateCartItem = (product: IProductProps, item: IProductProps, num: number): IProductProps => {
 
     const {
         id = product.id,
         img = product.img,
         name = product.name,
         price = 0,
-        quantity = num
+        quantity = 1
     } = item;
 
     return {
         id,
         img,
         name,
-        quantity: product.quantity + num,
+        quantity: quantity + num,
         price: price + num * product.price
     };
 };
 
-const updateOrder = (state: ICartState, product: IProductProps, index:number, num: number):ICartState => {
+const updateOrder = (state: ICartState, product: IProductProps, index: number, num: number): ICartState => {
     const productItem = state.cartItems.find(({id}) => id === product.id);
     const productList = state.cartItems;
 
     const newItem = updateCartItem(productItem, product, num);
 
+    const newItems = updateCartItems(productList, newItem, index);
+
     return {
-        ...state,
-        cartItems: updateCartItems(productList, newItem, index),
+        cartItems: newItems,
+        orderTotal: orderTotal(newItems),
+        priceTotal: priceTotal(newItems),
     }
+}
+const orderTotal = (allProduct: IProductProps[]): number => {
+    return allProduct.reduce((sum: number, item: IProductProps) => sum + item.quantity, 0);
+}
+
+const priceTotal = (allProduct: IProductProps[]): number => {
+    return allProduct.reduce((sum: number, item: IProductProps) => sum + item.price, 0);
 }
 
 const cartReducer = (state = initialState, action: CartType): ICartState => {
@@ -66,16 +76,18 @@ const cartReducer = (state = initialState, action: CartType): ICartState => {
         case CartActionTypes.ADD_CART: {
             const productIndex = state.cartItems.findIndex(({id}) => id === action.payload.id);
 
-            if(productIndex >= 0) {
+            if (productIndex >= 0) {
                 return updateOrder(state, action.payload, productIndex, 1);
             }
+            const newCartItems = [
+                ...state.cartItems,
+                action.payload
+            ]
 
             return {
-                ...state,
-                cartItems: [
-                    ...state.cartItems,
-                    action.payload
-                ]
+                cartItems: newCartItems,
+                orderTotal: orderTotal(newCartItems),
+                priceTotal: priceTotal(newCartItems),
             }
         }
         case CartActionTypes.REMOVER_FROM_CART:

@@ -7,7 +7,7 @@ interface IProductItemProps {
 }
 
 const ProductItem: React.FC<IProductItemProps> = ({product, handelClick}) => {
-    const {img, name, price, quantity} = product;
+    const {img, name, price} = product;
     return (
         <li className="catalog__item product">
             <div className="product__thumb">
@@ -17,7 +17,6 @@ const ProductItem: React.FC<IProductItemProps> = ({product, handelClick}) => {
                 <h2 className="product__name">{name}</h2>
                 <div className="product__price">{price} $</div>
             </div>
-            <div className="product__quantity">Quantity: {quantity}</div>
             <button type="button" onClick={handelClick} className="product__button button button_outline">Add to cart
             </button>
         </li>

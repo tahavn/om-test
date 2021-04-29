@@ -1,0 +1,204 @@
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  min-height: 100%;
+  min-width: 320px;
+}
+
+* {
+  box-sizing: border-box;
+
+  &:before, &:after {
+    box-sizing: border-box;
+  }
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background: linear-gradient(0, #FFFFFF 0%, #EEEEEE 53.13%, #FCFCFC 100%);
+}
+
+.page {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+
+  &__content {
+    flex-grow: 1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &__footer {
+    margin-top: auto;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.button {
+  display: inline-block;
+  background-color: $orange;
+  border-radius: 30px;
+  padding: 10px 20px;
+  min-width: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color $time-transition ease-in-out, border-color $time-transition ease-in-out;
+  border: 1px solid transparent;
+  text-decoration: none;
+
+  &,
+  span {
+    color: #fff;
+  }
+
+  i,
+  span,
+  path,
+  svg {
+    transition: all $time-transition ease-in-out;
+  }
+
+  &:hover {
+    background-color: darken($orange, 8%);
+  }
+
+  &:active {
+    background-color: darken($orange, 12%);
+    transform: translateY(1px);
+  }
+
+  &--circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    padding: 0;
+    border-width: 2px;
+  }
+
+  &_outline {
+    min-width: 140px;
+    background-color: transparent;
+    border-color: $orange;
+    font-size: 16px;
+
+    &,
+    span {
+      color: $orange;
+    }
+
+    svg {
+      path {
+        fill: $orange;
+      }
+    }
+
+    &:hover {
+      background-color: $orange;
+
+      &,
+      span {
+        color: #fff;
+      }
+
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+
+    &:active {
+      background-color: darken($orange, 8%);
+    }
+  }
+
+  &__delimiter {
+    width: 1px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.25);
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+
+  &--add {
+    svg {
+      margin-right: 2px;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    &:hover {
+      i {
+        background-color: #fff;
+        color: $orange;
+      }
+    }
+
+    i {
+      display: inline-block;
+      border-radius: 30px;
+      background-color: $orange;
+      color: #fff;
+      font-weight: 600;
+      width: 22px;
+      height: 22px;
+      font-style: normal;
+      font-size: 13px;
+      line-height: 22px;
+      position: relative;
+      top: -1px;
+      left: 3px;
+    }
+  }
+
+  &_cart {
+    display: flex;
+    align-items: center;
+    line-height: 23px;
+    padding: 12px 25px;
+
+    svg {
+      margin-right: 8px;
+      margin-bottom: 1px;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+}
+
+.error {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #ff0000;
+}
+.loading {
+  font-size: 24px;
+}

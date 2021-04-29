@@ -6,10 +6,8 @@ const fetchProducts = () => {
     return async (dispatch: Dispatch<ProductsType>) => {
         try {
             dispatch({type: ProductsActionTypes.FETCH_PRODUCTS})
-            const response = await axios.get('http://localhost:3000/db.json')
-            setTimeout(() => {
-                dispatch({type: ProductsActionTypes.FETCH_PRODUCTS_SUCCESS, payload: response.data.goods})
-            }, 500)
+            const response = await axios.get('http://localhost:3000/db.json');
+            dispatch({type: ProductsActionTypes.FETCH_PRODUCTS_SUCCESS, payload: response.data.goods})
         } catch (e) {
             dispatch({
                 type: ProductsActionTypes.FETCH_PRODUCTS_ERROR,

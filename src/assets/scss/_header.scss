@@ -1,0 +1,43 @@
+.header {
+  border-bottom: 1px solid $gray;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 91px;
+    padding: 20px 0;
+  }
+
+  &__logo {
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    color: $gray;
+    text-decoration: none;
+    transition: opacity $time-transition;
+
+    @media (max-width: 360px) {
+      font-size: 17px;
+    }
+    @media (min-width: 480px) {
+      font-size: 34px;
+    }
+
+    &:hover {
+      opacity: .7;
+    }
+
+    &:before {
+      content: attr(data-subtitle);
+      position: absolute;
+      right: -15px;
+      bottom: -15px;
+      color: lighten($blue, 5%);
+    }
+  }
+
+  &__cart {
+
+  }
+}

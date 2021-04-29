@@ -1,7 +1,9 @@
 import React from "react";
 import {Route, Link} from "react-router-dom";
+import useTypedSelector from "../hooks/useTypedSelector";
 
 const Header: React.FC = () => {
+    const {orderTotal, priceTotal} = useTypedSelector(state => state.cart);
     return (
         <div className="page__header header">
             <div className="container">
@@ -12,7 +14,7 @@ const Header: React.FC = () => {
                     <div className="header__cart">
                         <Route exact path="/">
                             <Link to="/cart" className="button button_cart">
-                                <span>120 ₽</span>
+                                <span>{priceTotal} ₽</span>
                                 <div className="button__delimiter"></div>
                                 <svg
                                     width="18"
@@ -43,7 +45,7 @@ const Header: React.FC = () => {
                                         strokeLinejoin="round"
                                     />
                                 </svg>
-                                <span>5</span>
+                                <span>{orderTotal}</span>
                             </Link>
                         </Route>
                     </div>
