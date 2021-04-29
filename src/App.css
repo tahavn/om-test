@@ -5,7 +5,7 @@ html {
 body {
   display: flex;
   min-height: 100%;
-  background: linear-gradient(0, #FFFFFF 0%, #EEEEEE 53.13%, #FCFCFC 100%);
+  min-width: 320px;
 }
 
 * {
@@ -23,6 +23,7 @@ h2, h3 {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  background: linear-gradient(0, #FFFFFF 0%, #EEEEEE 53.13%, #FCFCFC 100%);
 }
 
 .page {
@@ -60,11 +61,21 @@ h2, h3 {
 }
 .header__logo {
   position: relative;
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 700;
   color: #c4c4c4;
   text-decoration: none;
   transition: opacity 0.35s;
+}
+@media (max-width: 360px) {
+  .header__logo {
+    font-size: 17px;
+  }
+}
+@media (min-width: 480px) {
+  .header__logo {
+    font-size: 34px;
+  }
 }
 .header__logo:hover {
   opacity: 0.7;
@@ -97,18 +108,40 @@ h2, h3 {
 .product {
   display: flex;
   flex-direction: column;
-  width: calc(33.33% - 20px);
+  width: calc(100% - 20px);
   margin: 10px;
   padding: 20px;
   border: 1px solid #c4c4c4;
   border-radius: 10px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .product {
+    width: calc(50% - 20px);
+  }
+}
+@media (min-width: 767px) {
+  .product {
+    width: calc(33.33% - 20px);
+  }
+}
+.product__thumb img {
+  max-width: 100%;
+  object-fit: contain;
 }
 .product__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 20px 0;
+  margin: auto 0 20px;
+  padding-top: 20px;
+}
+.product__name {
+  padding-right: 7px;
+  margin: 5px 0;
+}
+.product__price {
+  margin: 5px 0;
 }
 .product__button {
   margin: 20px auto 0;
@@ -237,6 +270,10 @@ h2, h3 {
   text-transform: uppercase;
   font-size: 24px;
   color: #ff0000;
+}
+
+.loading {
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=App.css.map */

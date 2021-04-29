@@ -1,3 +1,5 @@
+import {IProductProps} from "./productItem";
+
 export enum ProductsActionTypes {
     FETCH_PRODUCTS = 'FETCH_PRODUCTS',
     FETCH_PRODUCTS_SUCCESS = 'FETCH_PRODUCTS_SUCCESS',
@@ -5,7 +7,7 @@ export enum ProductsActionTypes {
 }
 
 export interface productsState {
-    products: any[];
+    products: IProductProps[];
     loading: boolean;
     error: null | string;
 }
@@ -16,7 +18,7 @@ interface FetchProductsAction {
 
 interface FetchProductsSuccessAction {
     type: ProductsActionTypes.FETCH_PRODUCTS_SUCCESS;
-    payload: any[];
+    payload: IProductProps[];
 }
 
 interface FetchProductsErrorAction {
