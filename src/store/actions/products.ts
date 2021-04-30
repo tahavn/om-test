@@ -6,7 +6,7 @@ const fetchProducts = () => {
     return async (dispatch: Dispatch<ProductsType>) => {
         try {
             dispatch({type: ProductsActionTypes.FETCH_PRODUCTS})
-            const response = await axios.get('http://localhost:3000/db.json');
+            const response = await axios.get('/db.json');
             dispatch({type: ProductsActionTypes.FETCH_PRODUCTS_SUCCESS, payload: response.data.goods})
         } catch (e) {
             dispatch({

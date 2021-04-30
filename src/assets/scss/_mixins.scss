@@ -1,0 +1,31 @@
+@mixin media_interval($args...) {
+  $from: 0;
+  $to: 0;
+  $line: "";
+
+  $first: nth($args, 1);
+  @if (type_of($first) == list) {
+    // интервал в виде списка
+    $from: nth($first, 1);
+    $to: nth($first, 2);
+  } @else {
+    $from: nth($args, 1);
+    $to: nth($args, 2);
+  }
+
+  @if $from > 0 {
+    $line: "(min-width: #{$from})";
+  }
+
+  @if $to > 0 {
+    @if $from > 0 {
+      $line: "#{$line} and (max-width: #{$to - 1px})";
+    } @else {
+      $line: "(max-width: #{$to - 1px})";
+    }
+  }
+
+  @media all and #{$line} {
+    @content;
+  }
+}

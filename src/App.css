@@ -150,7 +150,12 @@ h2, h3 {
   display: flex;
   align-items: center;
   line-height: 23px;
-  padding: 12px 25px;
+  padding: 8px 14px;
+}
+@media all and (min-width: 480px) {
+  .button_cart {
+    padding: 12px 25px;
+  }
 }
 .button_cart svg {
   margin-right: 8px;
@@ -158,7 +163,12 @@ h2, h3 {
 }
 .button_cart span {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
+}
+@media all and (min-width: 480px) {
+  .button_cart span {
+    font-size: 16px;
+  }
 }
 
 .error {
@@ -167,7 +177,7 @@ h2, h3 {
   color: #ff0000;
 }
 
-.loading, .empty {
+.loading {
   font-size: 24px;
 }
 
@@ -279,19 +289,24 @@ h2, h3 {
   justify-content: space-between;
   align-items: center;
 }
-.cart .content__title {
+.cart__title {
   display: flex;
   align-items: center;
-  font-size: 32px;
+  font-size: 28px;
 }
-.cart .content__title svg {
+@media all and (min-width: 480px) {
+  .cart__title {
+    font-size: 32px;
+  }
+}
+.cart__title svg {
   position: relative;
   top: -2px;
   width: 30px;
   height: 30px;
   margin-right: 10px;
 }
-.cart .content__title svg path {
+.cart__title svg path {
   stroke: #232323;
   stroke-width: 1.9;
 }
@@ -325,7 +340,9 @@ h2, h3 {
   list-style: none;
 }
 .cart__item {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   margin-top: 30px;
   padding: 20px;
@@ -333,10 +350,21 @@ h2, h3 {
   border-radius: 10px;
   background-color: #ffffff;
 }
+@media all and (min-width: 768px) {
+  .cart__item {
+    flex-wrap: nowrap;
+  }
+}
 .cart__item-img {
   display: flex;
   align-items: center;
   margin-right: 20px;
+  margin-bottom: 20px;
+}
+@media all and (min-width: 768px) {
+  .cart__item-img {
+    margin-bottom: 0;
+  }
 }
 .cart__item-img img {
   width: 100px;
@@ -344,11 +372,20 @@ h2, h3 {
   object-fit: contain;
 }
 .cart__item-info {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 20px;
+  width: calc(100% - 120px);
+  margin-bottom: 20px;
+  padding: 40px 0;
+}
+@media all and (min-width: 768px) {
+  .cart__item-info {
+    flex-grow: 1;
+    width: auto;
+    margin-bottom: 0;
+    padding: 0 20px 0 0;
+  }
 }
 .cart__item-info h3 {
   font-weight: bold;
@@ -363,7 +400,23 @@ h2, h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 150px;
+  min-width: 100px;
+  margin-right: 20px;
+}
+@media all and (min-width: 360px) {
+  .cart__item-count {
+    min-width: 150px;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .cart__item-count {
+    margin: 0 20px 0 120px;
+  }
+}
+@media all and (min-width: 768px) {
+  .cart__item-count {
+    margin: 0;
+  }
 }
 .cart__item-count-removed svg path:first-of-type {
   display: none;
@@ -376,8 +429,14 @@ h2, h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 200px;
-  padding: 0 20px;
+  margin-left: auto;
+}
+@media all and (min-width: 768px) {
+  .cart__item-price {
+    min-width: 200px;
+    margin: 0;
+    padding: 0 20px;
+  }
 }
 .cart__item-price strong {
   font-weight: bold;
@@ -385,11 +444,19 @@ h2, h3 {
   letter-spacing: 0.01em;
 }
 .cart__item-remove {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   min-width: 35px;
+}
+@media all and (min-width: 768px) {
+  .cart__item-remove {
+    position: static;
+  }
 }
 .cart__item-remove .button {
   border-color: #dddddd;
@@ -411,11 +478,26 @@ h2, h3 {
 }
 .cart__footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin: 50px 0;
 }
+@media all and (min-width: 480px) {
+  .cart__footer {
+    flex-direction: row;
+  }
+}
 .cart__footer span {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
   font-size: 22px;
+}
+@media all and (min-width: 480px) {
+  .cart__footer span {
+    display: block;
+    margin-bottom: 0;
+  }
 }
 .cart__footer span:last-of-type strong {
   color: #fe5f1e;
@@ -449,6 +531,35 @@ h2, h3 {
   padding: 12px 0 14px;
   font-weight: 600;
   font-size: 18px;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.empty__icon {
+  margin-left: -20px;
+  width: 150px;
+  height: 180px;
+}
+@media all and (min-width: 768px) {
+  .empty__icon {
+    width: auto;
+    height: auto;
+  }
+}
+.empty__icon svg {
+  max-width: 100%;
+}
+.empty__icon svg path {
+  stroke: #fe5f1e;
+}
+.empty__label {
+  margin-top: 25px;
+  font-size: 28px;
+  color: #232323;
 }
 
 /*# sourceMappingURL=App.css.map */

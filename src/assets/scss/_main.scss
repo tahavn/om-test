@@ -179,7 +179,10 @@ h2, h3 {
     display: flex;
     align-items: center;
     line-height: 23px;
-    padding: 12px 25px;
+    padding: 8px 14px;
+    @include media_interval($media480, 0) {
+      padding: 12px 25px;
+    }
 
     svg {
       margin-right: 8px;
@@ -188,7 +191,10 @@ h2, h3 {
 
     span {
       font-weight: 600;
-      font-size: 16px;
+      font-size: 14px;
+      @include media_interval($media480, 0) {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -198,6 +204,7 @@ h2, h3 {
   font-size: 24px;
   color: #ff0000;
 }
-.loading, .empty {
+
+.loading {
   font-size: 24px;
 }

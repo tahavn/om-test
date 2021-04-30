@@ -4,6 +4,7 @@ import useTypedSelector from "../hooks/useTypedSelector";
 import {useDispatch} from "react-redux";
 import {allRemover, clearCart, increment, remover} from "../store/actions/cart";
 import {IProductProps} from "../types/productItem";
+import EmptyCart from "../components/EmptyCart";
 
 const Cart: React.FC = () => {
     const {cartItems, orderTotal, priceTotal} = useTypedSelector(state => state.cart);
@@ -13,24 +14,20 @@ const Cart: React.FC = () => {
         dispatch(increment(id))
     }
 
-    const onRemoverProduct = (id:string): void => {
+    const onRemoverProduct = (id: string): void => {
         dispatch(remover(id))
     }
     const onAllRemoverProduct = (product: IProductProps): void => {
         dispatch(allRemover(product))
     }
 
-    const clickClearCart =():void => {
+    const clickClearCart = (): void => {
         dispatch(clearCart())
     }
 
     if (!cartItems.length) {
         return (
-            <div className="cart">
-                <div className="container">
-                    <div className="empty">Empty</div>
-                </div>
-            </div>
+            <EmptyCart/>
         )
     }
 
@@ -40,7 +37,7 @@ const Cart: React.FC = () => {
                 <div className="cart__inner">
                     <div className="cart">
                         <div className="cart__header">
-                            <h2 className="content__title">
+                            <h2 className="cart__title">
                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
