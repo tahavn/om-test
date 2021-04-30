@@ -31,31 +31,31 @@ const updateCartItems = (cartItems: IProductProps[], item: IProductProps, index:
 };
 
 const updateCartItem = (product: IProductProps, item: IProductProps, num: number): IProductProps => {
-
     const {
-        id = product.id,
-        img = product.img,
-        name = product.name,
+        id = item.id,
+        img = item.img,
+        name = item.name,
         price = 0,
-        quantity = 1
+        quantity = 0
     } = item;
 
     return {
         id,
         img,
         name,
-        quantity: quantity + num,
-        price: price + num * product.price
+        quantity: product.quantity + num,
+        price: product.price + num * item.price
     };
 };
 
-const updateOrder = (state: ICartState, product: IProductProps, index: number, num: number): ICartState => {
-    const productItem = state.cartItems.find(({id}) => id === product.id);
+const updateOrder = (state: ICartState, product: IProductProps, num: number): ICartState => {
     const productList = state.cartItems;
+    const productIndex = productList.findIndex(({id}) => id === product.id)
+    const productItem = productList.find(({id}) => id === product.id);
 
     const newItem = updateCartItem(productItem, product, num);
 
-    const newItems = updateCartItems(productList, newItem, index);
+    const newItems = updateCartItems(productList, newItem, productIndex);
 
     return {
         cartItems: newItems,
@@ -77,7 +77,7 @@ const cartReducer = (state = initialState, action: CartType): ICartState => {
             const productIndex = state.cartItems.findIndex(({id}) => id === action.payload.id);
 
             if (productIndex >= 0) {
-                return updateOrder(state, action.payload, productIndex, 1);
+                return updateOrder(state, action.payload, 1);
             }
             const newCartItems = [
                 ...state.cartItems,
@@ -90,10 +90,13 @@ const cartReducer = (state = initialState, action: CartType): ICartState => {
                 priceTotal: priceTotal(newCartItems),
             }
         }
+        case CartActionTypes.INCREMENT_CART:
+            return updateOrder(state, action.payload, 1);
         case CartActionTypes.REMOVER_FROM_CART:
-            return state
+            return updateOrder(state, action.payload, -1);
         case CartActionTypes.ALL_REMOVED_FROM_CART:
-            return state
+            const numRemoved = action.payload.quantity
+            return updateOrder(state, action.payload, -numRemoved);
         default:
             return state
     }

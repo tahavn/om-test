@@ -14,7 +14,7 @@ const Header: React.FC = () => {
                     <div className="header__cart">
                         <Route exact path="/">
                             <Link to="/cart" className="button button_cart">
-                                <span>{priceTotal} ₽</span>
+                                <span>{priceTotal} $</span>
                                 <div className="button__delimiter"></div>
                                 <svg
                                     width="18"

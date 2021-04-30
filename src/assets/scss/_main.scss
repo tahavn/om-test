@@ -86,7 +86,7 @@ h2, h3 {
     transform: translateY(1px);
   }
 
-  &--circle {
+  &_circle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,7 +98,6 @@ h2, h3 {
   }
 
   &_outline {
-    min-width: 140px;
     background-color: transparent;
     border-color: $orange;
     font-size: 16px;
@@ -199,6 +198,6 @@ h2, h3 {
   font-size: 24px;
   color: #ff0000;
 }
-.loading {
+.loading, .empty {
   font-size: 24px;
 }

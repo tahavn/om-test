@@ -17,4 +17,6 @@ const fetchProducts = () => {
     }
 }
 
-export default fetchProducts;
+export {
+    fetchProducts
+};

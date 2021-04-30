@@ -2,6 +2,7 @@ import {IProductProps} from "./productItem";
 
 export enum CartActionTypes {
     ADD_CART = 'ADD_TO_CART',
+    INCREMENT_CART = 'INCREMENT_CART',
     REMOVER_FROM_CART = 'REMOVED_FROM_CART',
     ALL_REMOVED_FROM_CART = 'ALL_REMOVED_FROM_CART'
 }
@@ -17,14 +18,19 @@ interface IAddCartAction {
     payload: IProductProps;
 }
 
+interface IIncrementAction {
+    type: CartActionTypes.INCREMENT_CART;
+    payload: IProductProps;
+}
+
 interface IRemoverFromCartAction {
     type: CartActionTypes.REMOVER_FROM_CART;
-    payload: string;
+    payload: IProductProps;
 }
 
 interface IAllRemovedFromCart {
     type: CartActionTypes.ALL_REMOVED_FROM_CART
-    payload: string;
+    payload: IProductProps;
 }
 
-export type CartType = IAddCartAction | IRemoverFromCartAction | IAllRemovedFromCart;
+export type CartType = IAddCartAction | IIncrementAction | IRemoverFromCartAction | IAllRemovedFromCart;

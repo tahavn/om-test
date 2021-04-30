@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import ProductsList from "../components/ProductsList";
 import useTypedSelector from "../hooks/useTypedSelector";
 import {useDispatch} from "react-redux";
-import fetchProducts from "../store/actions/products";
+import {fetchProducts} from "../store/actions/products";
 import {CartActionTypes} from "../types/cart";
 import {IProductProps} from "../types/productItem";
 

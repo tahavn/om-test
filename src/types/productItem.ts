@@ -3,5 +3,5 @@ export interface IProductProps {
     img: string;
     name: string,
     price: number;
-    quantity: number
+    quantity: number;
 }
