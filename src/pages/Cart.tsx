@@ -6,18 +6,17 @@ import {allRemover, clearCart, increment, remover} from "../store/actions/cart";
 import {IProductProps} from "../types/productItem";
 import EmptyCart from "../components/EmptyCart";
 import CreateProduct from "../components/CreateProduct";
-import {log} from "util";
 
 const Cart: React.FC = () => {
     const {cartItems, orderTotal, priceTotal} = useTypedSelector(state => state.cart);
     const dispatch = useDispatch();
 
-    const onAddProduct = (id: string): void => {
-        dispatch(increment(id))
+    const onAddProduct = (product: IProductProps): void => {
+        dispatch(increment(product))
     }
 
-    const onRemoverProduct = (id: string): void => {
-        dispatch(remover(id))
+    const onRemoverProduct = (product: IProductProps): void => {
+        dispatch(remover(product))
     }
     const onAllRemoverProduct = (product: IProductProps): void => {
         dispatch(allRemover(product))
@@ -79,8 +78,8 @@ const Cart: React.FC = () => {
                         {
                             cartItems.map(product => (
                                 <CartItem
-                                    handlerIncrement={() => onAddProduct(product.id)}
-                                    handlerRemover={() => onRemoverProduct(product.id)}
+                                    handlerIncrement={() => onAddProduct(product)}
+                                    handlerRemover={() => onRemoverProduct(product)}
                                     handlerAllRemover={() => onAllRemoverProduct(product)}
                                     product={product}
                                     key={product.id}

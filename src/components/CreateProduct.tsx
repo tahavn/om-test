@@ -1,6 +1,6 @@
 import React, {ChangeEvent, SyntheticEvent, useState} from "react";
 import {useDispatch} from "react-redux";
-import {IProductCartProps} from "../types/productItem";
+import {IProductProps} from "../types/productItem";
 import {createProduct} from "../store/actions/cart";
 import {updateProducts} from "../store/actions/products";
 import defaultImg from "../assets/image/default.png"
@@ -22,12 +22,11 @@ const CreateProduct: React.FC = () => {
     const handlerSubmit = (e: SyntheticEvent): void => {
         e.preventDefault();
         if (name.length && price.length) {
-            const product: IProductCartProps = {
+            const product: IProductProps = {
                 id: name.trim() + Date.now(),
                 img: defaultImg,
                 name: name,
                 price: +price,
-                priceOne: +price,
                 quantity: 1
             }
             dispatch(updateProducts(product));

@@ -1,6 +1,5 @@
 import React from "react";
 import {IProductProps} from "../types/productItem";
-import {log} from "util";
 
 interface ICartItemProps {
     product: IProductProps;

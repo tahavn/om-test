@@ -1,10 +1,12 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import CreateProduct from "./CreateProduct";
 
 const EmptyCart: React.FC = () => {
     return (
         <div className="cart">
             <div className="container">
+                <CreateProduct/>
                 <div className="empty">
                     <div className="empty__icon">
                         <svg width="220" height="220" viewBox="0 0 18 18" fill="none"
@@ -23,7 +25,6 @@ const EmptyCart: React.FC = () => {
                                 strokeLinejoin="round"/>
                         </svg>
                     </div>
-                    <h2 className="empty__label">Empty</h2>
                     <Link to="/" className="empty__button button">Catalog</Link>
                 </div>
             </div>

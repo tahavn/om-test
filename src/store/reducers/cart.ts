@@ -1,5 +1,5 @@
 import {CartActionTypes, CartType, ICartState} from "../../types/cart";
-import {IProductProps} from "../../types/productItem";
+import {IProductCartProps, IProductProps} from "../../types/productItem";
 
 const initialState: ICartState = {
     cartItems: [],
@@ -30,27 +30,19 @@ const updateCartItems = (cartItems: IProductProps[], item: IProductProps, index:
     ];
 };
 
-const updateCartItem = (product: IProductProps, item: IProductProps, num: number): IProductProps => {
-    // const {
-    //     id = item.id,
-    //     img = item.img,
-    //     name = item.name,
-    //     price = 0,
-    //     quantity = 0
-    // } = item;
-
+const updateCartItem = (product: IProductCartProps, item: IProductCartProps, num: number): IProductCartProps => {
     return {
-        id : item.id,
-        img : item.img,
-        name : item.name,
+        id: item.id,
+        img: item.img,
+        name: item.name,
         quantity: product.quantity + num,
-        price: product.price + num * item.price
+        price: product.price + num * product.priceOne,
+        priceOne: product.priceOne
     };
 };
 
-const updateOrder = (state: ICartState, product: IProductProps, num: number): ICartState => {
+const updateOrder = (state: ICartState, product: IProductCartProps, num: number): ICartState => {
     const productList = state.cartItems;
-    console.log(product)
     const productIndex = productList.findIndex(({id}) => id === product.id)
     const productItem = productList.find(({id}) => id === product.id);
 
@@ -72,7 +64,7 @@ const priceTotal = (allProduct: IProductProps[]): number => {
     return allProduct.reduce((sum: number, item: IProductProps) => sum + item.price, 0);
 }
 
-const createProduct = (state:ICartState, product:IProductProps):ICartState => {
+const createProduct = (state: ICartState, product: IProductProps): ICartState => {
     return {
         ...state,
         cartItems: [
@@ -82,7 +74,7 @@ const createProduct = (state:ICartState, product:IProductProps):ICartState => {
     }
 }
 
-const clearCart = ():ICartState => {
+const clearCart = (): ICartState => {
     return {
         cartItems: [],
         orderTotal: 0,
@@ -90,17 +82,21 @@ const clearCart = ():ICartState => {
     }
 }
 
+const productCart = (product: IProductProps): IProductCartProps => ({
+    ...product,
+    priceOne: product.price
+})
+
 const cartReducer = (state = initialState, action: CartType): ICartState => {
     switch (action.type) {
         case CartActionTypes.ADD_CART: {
             const productIndex = state.cartItems.findIndex(({id}) => id === action.payload.id);
-
             if (productIndex >= 0) {
-                return updateOrder(state, action.payload, 1);
+                return updateOrder(state, productCart(action.payload), 1);
             }
             const newCartItems = [
                 ...state.cartItems,
-                action.payload
+                productCart(action.payload)
             ]
 
             return {
@@ -110,19 +106,17 @@ const cartReducer = (state = initialState, action: CartType): ICartState => {
             }
         }
         case CartActionTypes.INCREMENT_CART:
-            return updateOrder(state, action.payload, 1);
+            return updateOrder(state, productCart(action.payload), 1);
         case CartActionTypes.REMOVER_FROM_CART:
-            return updateOrder(state, action.payload, -1);
+            return updateOrder(state, productCart(action.payload), -1);
         case CartActionTypes.ALL_REMOVED_FROM_CART:
             const numRemoved = action.payload.quantity;
-            return updateOrder(state, action.payload, -numRemoved);
+            return updateOrder(state, productCart(action.payload), -numRemoved);
         case CartActionTypes.CLEAR_CART:
-           return clearCart();
+            return clearCart();
         case CartActionTypes.CREATE_PRODUCT_CART: {
-            return createProduct(state, action.payload);
+            return createProduct(state, productCart(action.payload));
         }
-            // return updateOrder(state, action.payload!, 1);
-
         default:
             return state
     }
