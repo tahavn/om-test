@@ -31,18 +31,18 @@ const updateCartItems = (cartItems: IProductProps[], item: IProductProps, index:
 };
 
 const updateCartItem = (product: IProductProps, item: IProductProps, num: number): IProductProps => {
-    const {
-        id = item.id,
-        img = item.img,
-        name = item.name,
-        price = 0,
-        quantity = 0
-    } = item;
+    // const {
+    //     id = item.id,
+    //     img = item.img,
+    //     name = item.name,
+    //     price = 0,
+    //     quantity = 0
+    // } = item;
 
     return {
-        id,
-        img,
-        name,
+        id : item.id,
+        img : item.img,
+        name : item.name,
         quantity: product.quantity + num,
         price: product.price + num * item.price
     };
@@ -50,6 +50,7 @@ const updateCartItem = (product: IProductProps, item: IProductProps, num: number
 
 const updateOrder = (state: ICartState, product: IProductProps, num: number): ICartState => {
     const productList = state.cartItems;
+    console.log(product)
     const productIndex = productList.findIndex(({id}) => id === product.id)
     const productItem = productList.find(({id}) => id === product.id);
 
@@ -69,6 +70,24 @@ const orderTotal = (allProduct: IProductProps[]): number => {
 
 const priceTotal = (allProduct: IProductProps[]): number => {
     return allProduct.reduce((sum: number, item: IProductProps) => sum + item.price, 0);
+}
+
+const createProduct = (state:ICartState, product:IProductProps):ICartState => {
+    return {
+        ...state,
+        cartItems: [
+            product,
+            ...state.cartItems,
+        ]
+    }
+}
+
+const clearCart = ():ICartState => {
+    return {
+        cartItems: [],
+        orderTotal: 0,
+        priceTotal: 0,
+    }
 }
 
 const cartReducer = (state = initialState, action: CartType): ICartState => {
@@ -98,11 +117,12 @@ const cartReducer = (state = initialState, action: CartType): ICartState => {
             const numRemoved = action.payload.quantity;
             return updateOrder(state, action.payload, -numRemoved);
         case CartActionTypes.CLEAR_CART:
-            return {
-                cartItems: [],
-                orderTotal: 0,
-                priceTotal: 0,
-            }
+           return clearCart();
+        case CartActionTypes.CREATE_PRODUCT_CART: {
+            return createProduct(state, action.payload);
+        }
+            // return updateOrder(state, action.payload!, 1);
+
         default:
             return state
     }

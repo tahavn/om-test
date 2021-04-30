@@ -1,6 +1,7 @@
 import {Dispatch} from "redux";
 import {ProductsActionTypes, ProductsType} from "../../types/product";
 import axios from "axios";
+import {IProductProps} from "../../types/productItem";
 
 const fetchProducts = () => {
     return async (dispatch: Dispatch<ProductsType>) => {
@@ -17,6 +18,12 @@ const fetchProducts = () => {
     }
 }
 
+const updateProducts = (product: IProductProps): ProductsType => ({
+    type: ProductsActionTypes.UPDATE_PRODUCTS,
+    payload: product
+})
+
 export {
-    fetchProducts
+    fetchProducts,
+    updateProducts
 };

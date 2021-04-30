@@ -4,13 +4,13 @@ import {log} from "util";
 
 interface ICartItemProps {
     product: IProductProps;
-    handleIncrement: () => void;
-    handleRemover: () => void;
-    handleAllRemover: () => void;
+    handlerIncrement: () => void;
+    handlerRemover: () => void;
+    handlerAllRemover: () => void;
 }
 
-const CartItem: React.FC<ICartItemProps> = ({product, handleIncrement, handleRemover, handleAllRemover}) => {
-    const {id, img, price, quantity, name} = product;
+const CartItem: React.FC<ICartItemProps> = ({product, handlerIncrement, handlerRemover, handlerAllRemover}) => {
+    const {img, price, quantity, name} = product;
 
     return (
         <li className="cart__item">
@@ -21,7 +21,7 @@ const CartItem: React.FC<ICartItemProps> = ({product, handleIncrement, handleRem
                 <h3>{name}</h3>
             </div>
             <div className="cart__item-count">
-                <button type="button" onClick={handleRemover} className="button button_outline button_circle cart__item-count-removed">
+                <button type="button" onClick={handlerRemover} className="button button_outline button_circle cart__item-count-removed">
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -34,7 +34,7 @@ const CartItem: React.FC<ICartItemProps> = ({product, handleIncrement, handleRem
 
                 </button>
                 <strong>{quantity}</strong>
-                <button type="button"  onClick={handleIncrement} className="button button_outline button_circle cart__item-count-add">
+                <button type="button"  onClick={handlerIncrement} className="button button_outline button_circle cart__item-count-add">
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -51,7 +51,7 @@ const CartItem: React.FC<ICartItemProps> = ({product, handleIncrement, handleRem
                 <strong>{price} $</strong>
             </div>
             <div className="cart__item-remove">
-                <button type="button" onClick={handleAllRemover} className="button button_outline button_circle">
+                <button type="button" onClick={handlerAllRemover} className="button button_outline button_circle">
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path

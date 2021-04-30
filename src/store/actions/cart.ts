@@ -30,18 +30,24 @@ const remover = (productId: string) => {
         })
     }
 }
-const allRemover = (product: IProductProps) => ({
+const allRemover = (product: IProductProps): CartType => ({
     type: CartActionTypes.ALL_REMOVED_FROM_CART,
     payload: product
 })
 
-const clearCart = () => ({
+const clearCart = (): CartType => ({
     type: CartActionTypes.CLEAR_CART
+})
+
+const createProduct = (product: IProductProps): CartType => ({
+    type: CartActionTypes.CREATE_PRODUCT_CART,
+    payload: product
 })
 
 export {
     increment,
     remover,
     allRemover,
-    clearCart
+    clearCart,
+    createProduct
 }

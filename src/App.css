@@ -561,5 +561,84 @@ h2, h3 {
   font-size: 28px;
   color: #232323;
 }
+.empty__button {
+  margin-top: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 40px 0;
+  padding: 30px 30px 30px;
+  border: 1px solid #c4c4c4;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+@media all and (min-width: 640px) {
+  .form {
+    padding: 50px 50px 30px;
+  }
+}
+.form__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+@media all and (min-width: 640px) {
+  .form__content {
+    flex-direction: row;
+  }
+  .form__content > * {
+    width: 48.5%;
+  }
+}
+.form__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form__label {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.form__label-text {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  display: inline-block;
+  padding: 5px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #c4c4c4;
+  background-color: #ffffff;
+  transition: transform 0.35s;
+}
+.form__input {
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+}
+.form__input:focus + .form__label-text {
+  transform: translate(-5px, -40px);
+}
+.form__input:not(:placeholder-shown) + .form__label-text {
+  transform: translate(-5px, -40px);
+}
+.form__input::placeholder {
+  opacity: 0;
+  color: transparent;
+}
+.form__button {
+  min-width: 120px;
+  font-size: 18px;
+}
 
 /*# sourceMappingURL=App.css.map */

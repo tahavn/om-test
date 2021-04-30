@@ -1,4 +1,4 @@
-import {ProductsType, ProductsActionTypes, productsState} from "../../types/product";
+import {ProductsActionTypes, productsState, ProductsType} from "../../types/product";
 
 const initialState: productsState = {
     products: [],
@@ -13,7 +13,15 @@ const productsReducer = (state = initialState, action: ProductsType): productsSt
         case ProductsActionTypes.FETCH_PRODUCTS_SUCCESS:
             return {products: action.payload, loading: false, error: null};
         case ProductsActionTypes.FETCH_PRODUCTS_ERROR:
-            return {products: [], loading: false, error: action.payload}
+            return {products: [], loading: false, error: action.payload};
+        case ProductsActionTypes.UPDATE_PRODUCTS:
+            return {
+                ...state,
+                products: [
+                    ...state.products,
+                    action.payload
+                ]
+            }
         default:
             return state;
     }

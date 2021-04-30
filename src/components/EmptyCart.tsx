@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const EmptyCart: React.FC = () => {
     return (
@@ -23,6 +24,7 @@ const EmptyCart: React.FC = () => {
                         </svg>
                     </div>
                     <h2 className="empty__label">Empty</h2>
+                    <Link to="/" className="empty__button button">Catalog</Link>
                 </div>
             </div>
         </div>

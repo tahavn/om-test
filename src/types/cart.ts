@@ -5,7 +5,8 @@ export enum CartActionTypes {
     INCREMENT_CART = 'INCREMENT_CART',
     REMOVER_FROM_CART = 'REMOVED_FROM_CART',
     ALL_REMOVED_FROM_CART = 'ALL_REMOVED_FROM_CART',
-    CLEAR_CART = 'CLEAR_CART'
+    CLEAR_CART = 'CLEAR_CART',
+    CREATE_PRODUCT_CART = 'CREATE_PRODUCT_CART'
 }
 
 export interface ICartState {
@@ -38,5 +39,9 @@ interface IClearCart {
     type: CartActionTypes.CLEAR_CART
     payload?: IProductProps;
 }
+interface ICreateProduct {
+    type: CartActionTypes.CREATE_PRODUCT_CART
+    payload: IProductProps;
+}
 
-export type CartType = IAddCartAction | IIncrementAction | IRemoverFromCartAction | IAllRemovedFromCart | IClearCart;
+export type CartType = IAddCartAction | IIncrementAction | IRemoverFromCartAction | IAllRemovedFromCart | IClearCart | ICreateProduct;
