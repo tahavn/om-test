@@ -3,15 +3,15 @@ import {Dispatch} from "redux";
 import {IProductProps} from "../../types/productItem";
 import {RootState} from "../reducers";
 
-function findProduct(productId: string, allState:() => RootState): IProductProps {
+function findProduct(productId: string, allState: () => RootState): IProductProps {
     const state = allState();
     const productItem = state.products.products;
     const product = productItem.find(({id}) => id === productId)!;
     return product
 }
 
-const increment = (productId:string)  =>  {
-    return (dispatch:Dispatch<CartType>, getState: () => RootState) => {
+const increment = (productId: string) => {
+    return (dispatch: Dispatch<CartType>, getState: () => RootState) => {
         const product = findProduct(productId, getState);
 
         dispatch({
@@ -20,8 +20,8 @@ const increment = (productId:string)  =>  {
         })
     }
 }
-const remover = (productId:string)  =>  {
-    return (dispatch:Dispatch<CartType>, getState: () => RootState) => {
+const remover = (productId: string) => {
+    return (dispatch: Dispatch<CartType>, getState: () => RootState) => {
         const product = findProduct(productId, getState);
 
         dispatch({
@@ -30,19 +30,18 @@ const remover = (productId:string)  =>  {
         })
     }
 }
-const allRemover = (productId:string)  =>  {
-    return (dispatch:Dispatch<CartType>, getState: () => RootState) => {
-        const product = findProduct(productId, getState);
+const allRemover = (product: IProductProps) => ({
+    type: CartActionTypes.ALL_REMOVED_FROM_CART,
+    payload: product
+})
 
-        dispatch({
-            type: CartActionTypes.ALL_REMOVED_FROM_CART,
-            payload: product
-        })
-    }
-}
+const clearCart = () => ({
+    type: CartActionTypes.CLEAR_CART
+})
 
 export {
     increment,
     remover,
-    allRemover
+    allRemover,
+    clearCart
 }

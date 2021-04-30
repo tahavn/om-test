@@ -95,8 +95,14 @@ const cartReducer = (state = initialState, action: CartType): ICartState => {
         case CartActionTypes.REMOVER_FROM_CART:
             return updateOrder(state, action.payload, -1);
         case CartActionTypes.ALL_REMOVED_FROM_CART:
-            const numRemoved = action.payload.quantity
+            const numRemoved = action.payload.quantity;
             return updateOrder(state, action.payload, -numRemoved);
+        case CartActionTypes.CLEAR_CART:
+            return {
+                cartItems: [],
+                orderTotal: 0,
+                priceTotal: 0,
+            }
         default:
             return state
     }

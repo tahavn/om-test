@@ -2,7 +2,8 @@ import React from "react";
 import CartItem from "../components/CartItem";
 import useTypedSelector from "../hooks/useTypedSelector";
 import {useDispatch} from "react-redux";
-import {allRemover, increment, remover} from "../store/actions/cart";
+import {allRemover, clearCart, increment, remover} from "../store/actions/cart";
+import {IProductProps} from "../types/productItem";
 
 const Cart: React.FC = () => {
     const {cartItems, orderTotal, priceTotal} = useTypedSelector(state => state.cart);
@@ -15,8 +16,12 @@ const Cart: React.FC = () => {
     const onRemoverProduct = (id:string): void => {
         dispatch(remover(id))
     }
-    const onAllRemoverProduct = (id:string): void => {
-        dispatch(allRemover(id))
+    const onAllRemoverProduct = (product: IProductProps): void => {
+        dispatch(allRemover(product))
+    }
+
+    const clickClearCart =():void => {
+        dispatch(clearCart())
     }
 
     if (!cartItems.length) {
@@ -53,7 +58,7 @@ const Cart: React.FC = () => {
                                 </svg>
                                 Basket
                             </h2>
-                            <div className="cart__clear">
+                            <button type="button" onClick={clickClearCart} className="cart__clear">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2.5 5H4.16667H17.5" stroke="#B6B6B6" strokeWidth="1.2"
@@ -69,7 +74,7 @@ const Cart: React.FC = () => {
                                 </svg>
 
                                 <span>Clear basket</span>
-                            </div>
+                            </button>
                         </div>
                         <ul className="cart__list">
                             {
@@ -77,7 +82,7 @@ const Cart: React.FC = () => {
                                     <CartItem
                                         handleIncrement={() => onAddProduct(product.id)}
                                         handleRemover={() => onRemoverProduct(product.id)}
-                                        handleAllRemover={() => onAllRemoverProduct(product.id)}
+                                        handleAllRemover={() => onAllRemoverProduct(product)}
                                         product={product}
                                         key={product.id}
                                     />
