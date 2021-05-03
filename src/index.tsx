@@ -10,11 +10,11 @@ import App from './App';
 import './index.scss';
 
 ReactDOM.render(
-    <Router>
-        <Provider store={store}>
+    <Provider store={store}>
+        <Router>
             <App/>
-        </Provider>
-    </Router>,
+        </Router>
+    </Provider>,
     document.getElementById('root')
 );
 

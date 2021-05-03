@@ -8,15 +8,18 @@ import defaultImg from "../assets/image/default.png"
 const CreateProduct: React.FC = () => {
     const [name, setName] = useState<string>('');
     const [price, setPrice] = useState<string>('');
+    const [error, setError] = useState<boolean>(false);
     const dispatch = useDispatch();
 
     const handlerChangeName = (e: ChangeEvent<HTMLInputElement>): void => {
         const value = e.target.value;
         setName(value);
+        setError(false);
     }
     const handlerChangePrice = (e: ChangeEvent<HTMLInputElement>): void => {
         const value = e.target.value;
         setPrice(value);
+        setError(false);
     }
 
     const handlerSubmit = (e: SyntheticEvent): void => {
@@ -33,6 +36,8 @@ const CreateProduct: React.FC = () => {
             dispatch(createProduct(product));
             setName('');
             setPrice('');
+        } else {
+            setError(true);
         }
     }
 
@@ -64,6 +69,7 @@ const CreateProduct: React.FC = () => {
                     </label>
                 </div>
             </div>
+            {error && <div className="form__error">All fields must be filled.</div>}
             <button type="submit" className="form__button button">Submit</button>
         </form>
     )

@@ -1,5 +1,5 @@
 import React from "react";
-import {Route} from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 
 import {Cart, Catalog} from "./pages";
 import {Footer, Header} from "./components";
@@ -9,10 +9,12 @@ import "./App.scss"
 function App() {
     return (
         <div className="page">
-            <Header />
+            <Header/>
             <main className="page__content">
-                <Route path="/" component={Catalog} exact/>
-                <Route path="/cart" component={Cart} exact/>
+                <Switch>
+                    <Route path="/" component={Catalog} exact/>
+                    <Route path="/cart" component={Cart} exact/>
+                </Switch>
             </main>
             <Footer/>
         </div>

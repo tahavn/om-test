@@ -11,7 +11,9 @@ const Catalog: React.FC = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchProducts())
+        if(!products.length) {
+            dispatch(fetchProducts());
+        }
     }, []);
 
     const handleAddToCart = (product:IProductProps): void => {

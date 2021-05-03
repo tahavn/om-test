@@ -1,0 +1,2480 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test catalog should renders <Catalog/> 1`] = `
+initialize {
+  "0": Node {
+    "attribs": Object {
+      "class": "catalog",
+    },
+    "children": Array [
+      Node {
+        "attribs": Object {
+          "class": "container",
+        },
+        "children": Array [
+          Node {
+            "attribs": Object {
+              "class": "catalog__list",
+            },
+            "children": Array [
+              Node {
+                "attribs": Object {
+                  "class": "catalog__item product",
+                },
+                "children": Array [
+                  Node {
+                    "attribs": Object {
+                      "class": "product__thumb",
+                    },
+                    "children": Array [
+                      Node {
+                        "attribs": Object {
+                          "alt": "TAKAMINE",
+                          "height": "400",
+                          "src": "http://pngimg.com/uploads/guitar/guitar_PNG3350.png",
+                          "width": "300",
+                        },
+                        "children": Array [],
+                        "name": "img",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "alt": undefined,
+                          "height": undefined,
+                          "src": undefined,
+                          "width": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "alt": undefined,
+                          "height": undefined,
+                          "src": undefined,
+                          "width": undefined,
+                        },
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Node {
+                      "attribs": Object {
+                        "class": "product__content",
+                      },
+                      "children": Array [
+                        Node {
+                          "attribs": Object {
+                            "class": "product__name",
+                          },
+                          "children": Array [
+                            Node {
+                              "data": "TAKAMINE",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "h2",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": Node {
+                            "attribs": Object {
+                              "class": "product__price",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "2000 $",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "div",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": [Circular],
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                        Node {
+                          "attribs": Object {
+                            "class": "product__price",
+                          },
+                          "children": Array [
+                            Node {
+                              "data": "2000 $",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "div",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": Node {
+                            "attribs": Object {
+                              "class": "product__name",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "TAKAMINE",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "h2",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": [Circular],
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": Node {
+                        "attribs": Object {
+                          "class": "product__button button button_outline",
+                          "type": "button",
+                        },
+                        "children": Array [
+                          Node {
+                            "data": "Add to cart",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "button",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                          "type": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                          "type": undefined,
+                        },
+                      },
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                  Node {
+                    "attribs": Object {
+                      "class": "product__content",
+                    },
+                    "children": Array [
+                      Node {
+                        "attribs": Object {
+                          "class": "product__name",
+                        },
+                        "children": Array [
+                          Node {
+                            "data": "TAKAMINE",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "h2",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": Node {
+                          "attribs": Object {
+                            "class": "product__price",
+                          },
+                          "children": Array [
+                            Node {
+                              "data": "2000 $",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "div",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": [Circular],
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      Node {
+                        "attribs": Object {
+                          "class": "product__price",
+                        },
+                        "children": Array [
+                          Node {
+                            "data": "2000 $",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "div",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": Node {
+                          "attribs": Object {
+                            "class": "product__name",
+                          },
+                          "children": Array [
+                            Node {
+                              "data": "TAKAMINE",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "h2",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": [Circular],
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Node {
+                      "attribs": Object {
+                        "class": "product__button button button_outline",
+                        "type": "button",
+                      },
+                      "children": Array [
+                        Node {
+                          "data": "Add to cart",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "button",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                        "type": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                        "type": undefined,
+                      },
+                    },
+                    "parent": [Circular],
+                    "prev": Node {
+                      "attribs": Object {
+                        "class": "product__thumb",
+                      },
+                      "children": Array [
+                        Node {
+                          "attribs": Object {
+                            "alt": "TAKAMINE",
+                            "height": "400",
+                            "src": "http://pngimg.com/uploads/guitar/guitar_PNG3350.png",
+                            "width": "300",
+                          },
+                          "children": Array [],
+                          "name": "img",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "alt": undefined,
+                            "height": undefined,
+                            "src": undefined,
+                            "width": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "alt": undefined,
+                            "height": undefined,
+                            "src": undefined,
+                            "width": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                  Node {
+                    "attribs": Object {
+                      "class": "product__button button button_outline",
+                      "type": "button",
+                    },
+                    "children": Array [
+                      Node {
+                        "data": "Add to cart",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "button",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": Node {
+                      "attribs": Object {
+                        "class": "product__content",
+                      },
+                      "children": Array [
+                        Node {
+                          "attribs": Object {
+                            "class": "product__name",
+                          },
+                          "children": Array [
+                            Node {
+                              "data": "TAKAMINE",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "h2",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": Node {
+                            "attribs": Object {
+                              "class": "product__price",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "2000 $",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "div",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": [Circular],
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                        Node {
+                          "attribs": Object {
+                            "class": "product__price",
+                          },
+                          "children": Array [
+                            Node {
+                              "data": "2000 $",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "div",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": Node {
+                            "attribs": Object {
+                              "class": "product__name",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "TAKAMINE",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "h2",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": [Circular],
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": Node {
+                        "attribs": Object {
+                          "class": "product__thumb",
+                        },
+                        "children": Array [
+                          Node {
+                            "attribs": Object {
+                              "alt": "TAKAMINE",
+                              "height": "400",
+                              "src": "http://pngimg.com/uploads/guitar/guitar_PNG3350.png",
+                              "width": "300",
+                            },
+                            "children": Array [],
+                            "name": "img",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "alt": undefined,
+                              "height": undefined,
+                              "src": undefined,
+                              "width": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "alt": undefined,
+                              "height": undefined,
+                              "src": undefined,
+                              "width": undefined,
+                            },
+                          },
+                        ],
+                        "name": "div",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "type": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "type": undefined,
+                    },
+                  },
+                ],
+                "name": "li",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Node {
+                  "attribs": Object {
+                    "class": "catalog__item product",
+                  },
+                  "children": Array [
+                    Node {
+                      "attribs": Object {
+                        "class": "product__thumb",
+                      },
+                      "children": Array [
+                        Node {
+                          "attribs": Object {
+                            "alt": "Fender",
+                            "height": "400",
+                            "src": "http://pngimg.com/uploads/guitar/guitar_PNG3369.png",
+                            "width": "300",
+                          },
+                          "children": Array [],
+                          "name": "img",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "alt": undefined,
+                            "height": undefined,
+                            "src": undefined,
+                            "width": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "alt": undefined,
+                            "height": undefined,
+                            "src": undefined,
+                            "width": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": Node {
+                        "attribs": Object {
+                          "class": "product__content",
+                        },
+                        "children": Array [
+                          Node {
+                            "attribs": Object {
+                              "class": "product__name",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "Fender",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "h2",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": Node {
+                              "attribs": Object {
+                                "class": "product__price",
+                              },
+                              "children": Array [
+                                Node {
+                                  "data": "2000 $",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "text",
+                                },
+                              ],
+                              "name": "div",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": [Circular],
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "class": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "class": undefined,
+                              },
+                            },
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          Node {
+                            "attribs": Object {
+                              "class": "product__price",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "2000 $",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "div",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": Node {
+                              "attribs": Object {
+                                "class": "product__name",
+                              },
+                              "children": Array [
+                                Node {
+                                  "data": "Fender",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "text",
+                                },
+                              ],
+                              "name": "h2",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": [Circular],
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "class": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "class": undefined,
+                              },
+                            },
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                        ],
+                        "name": "div",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": Node {
+                          "attribs": Object {
+                            "class": "product__button button button_outline",
+                            "type": "button",
+                          },
+                          "children": Array [
+                            Node {
+                              "data": "Add to cart",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "button",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": [Circular],
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                            "type": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                            "type": undefined,
+                          },
+                        },
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    Node {
+                      "attribs": Object {
+                        "class": "product__content",
+                      },
+                      "children": Array [
+                        Node {
+                          "attribs": Object {
+                            "class": "product__name",
+                          },
+                          "children": Array [
+                            Node {
+                              "data": "Fender",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "h2",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": Node {
+                            "attribs": Object {
+                              "class": "product__price",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "2000 $",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "div",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": [Circular],
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                        Node {
+                          "attribs": Object {
+                            "class": "product__price",
+                          },
+                          "children": Array [
+                            Node {
+                              "data": "2000 $",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "div",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": Node {
+                            "attribs": Object {
+                              "class": "product__name",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "Fender",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "h2",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": [Circular],
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": Node {
+                        "attribs": Object {
+                          "class": "product__button button button_outline",
+                          "type": "button",
+                        },
+                        "children": Array [
+                          Node {
+                            "data": "Add to cart",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "button",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                          "type": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                          "type": undefined,
+                        },
+                      },
+                      "parent": [Circular],
+                      "prev": Node {
+                        "attribs": Object {
+                          "class": "product__thumb",
+                        },
+                        "children": Array [
+                          Node {
+                            "attribs": Object {
+                              "alt": "Fender",
+                              "height": "400",
+                              "src": "http://pngimg.com/uploads/guitar/guitar_PNG3369.png",
+                              "width": "300",
+                            },
+                            "children": Array [],
+                            "name": "img",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "alt": undefined,
+                              "height": undefined,
+                              "src": undefined,
+                              "width": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "alt": undefined,
+                              "height": undefined,
+                              "src": undefined,
+                              "width": undefined,
+                            },
+                          },
+                        ],
+                        "name": "div",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    Node {
+                      "attribs": Object {
+                        "class": "product__button button button_outline",
+                        "type": "button",
+                      },
+                      "children": Array [
+                        Node {
+                          "data": "Add to cart",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "button",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": Node {
+                        "attribs": Object {
+                          "class": "product__content",
+                        },
+                        "children": Array [
+                          Node {
+                            "attribs": Object {
+                              "class": "product__name",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "Fender",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "h2",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": Node {
+                              "attribs": Object {
+                                "class": "product__price",
+                              },
+                              "children": Array [
+                                Node {
+                                  "data": "2000 $",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "text",
+                                },
+                              ],
+                              "name": "div",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": [Circular],
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "class": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "class": undefined,
+                              },
+                            },
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          Node {
+                            "attribs": Object {
+                              "class": "product__price",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "2000 $",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "div",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": Node {
+                              "attribs": Object {
+                                "class": "product__name",
+                              },
+                              "children": Array [
+                                Node {
+                                  "data": "Fender",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "text",
+                                },
+                              ],
+                              "name": "h2",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": [Circular],
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "class": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "class": undefined,
+                              },
+                            },
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                        ],
+                        "name": "div",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": Node {
+                          "attribs": Object {
+                            "class": "product__thumb",
+                          },
+                          "children": Array [
+                            Node {
+                              "attribs": Object {
+                                "alt": "Fender",
+                                "height": "400",
+                                "src": "http://pngimg.com/uploads/guitar/guitar_PNG3369.png",
+                                "width": "300",
+                              },
+                              "children": Array [],
+                              "name": "img",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "alt": undefined,
+                                "height": undefined,
+                                "src": undefined,
+                                "width": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "alt": undefined,
+                                "height": undefined,
+                                "src": undefined,
+                                "width": undefined,
+                              },
+                            },
+                          ],
+                          "name": "div",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": [Circular],
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                        "type": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                        "type": undefined,
+                      },
+                    },
+                  ],
+                  "name": "li",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+              Node {
+                "attribs": Object {
+                  "class": "catalog__item product",
+                },
+                "children": Array [
+                  Node {
+                    "attribs": Object {
+                      "class": "product__thumb",
+                    },
+                    "children": Array [
+                      Node {
+                        "attribs": Object {
+                          "alt": "Fender",
+                          "height": "400",
+                          "src": "http://pngimg.com/uploads/guitar/guitar_PNG3369.png",
+                          "width": "300",
+                        },
+                        "children": Array [],
+                        "name": "img",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "alt": undefined,
+                          "height": undefined,
+                          "src": undefined,
+                          "width": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "alt": undefined,
+                          "height": undefined,
+                          "src": undefined,
+                          "width": undefined,
+                        },
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Node {
+                      "attribs": Object {
+                        "class": "product__content",
+                      },
+                      "children": Array [
+                        Node {
+                          "attribs": Object {
+                            "class": "product__name",
+                          },
+                          "children": Array [
+                            Node {
+                              "data": "Fender",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "h2",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": Node {
+                            "attribs": Object {
+                              "class": "product__price",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "2000 $",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "div",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": [Circular],
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                        Node {
+                          "attribs": Object {
+                            "class": "product__price",
+                          },
+                          "children": Array [
+                            Node {
+                              "data": "2000 $",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "div",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": Node {
+                            "attribs": Object {
+                              "class": "product__name",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "Fender",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "h2",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": [Circular],
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": Node {
+                        "attribs": Object {
+                          "class": "product__button button button_outline",
+                          "type": "button",
+                        },
+                        "children": Array [
+                          Node {
+                            "data": "Add to cart",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "button",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                          "type": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                          "type": undefined,
+                        },
+                      },
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                  Node {
+                    "attribs": Object {
+                      "class": "product__content",
+                    },
+                    "children": Array [
+                      Node {
+                        "attribs": Object {
+                          "class": "product__name",
+                        },
+                        "children": Array [
+                          Node {
+                            "data": "Fender",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "h2",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": Node {
+                          "attribs": Object {
+                            "class": "product__price",
+                          },
+                          "children": Array [
+                            Node {
+                              "data": "2000 $",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "div",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": [Circular],
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      Node {
+                        "attribs": Object {
+                          "class": "product__price",
+                        },
+                        "children": Array [
+                          Node {
+                            "data": "2000 $",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "div",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": Node {
+                          "attribs": Object {
+                            "class": "product__name",
+                          },
+                          "children": Array [
+                            Node {
+                              "data": "Fender",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "h2",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": [Circular],
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Node {
+                      "attribs": Object {
+                        "class": "product__button button button_outline",
+                        "type": "button",
+                      },
+                      "children": Array [
+                        Node {
+                          "data": "Add to cart",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "button",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                        "type": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                        "type": undefined,
+                      },
+                    },
+                    "parent": [Circular],
+                    "prev": Node {
+                      "attribs": Object {
+                        "class": "product__thumb",
+                      },
+                      "children": Array [
+                        Node {
+                          "attribs": Object {
+                            "alt": "Fender",
+                            "height": "400",
+                            "src": "http://pngimg.com/uploads/guitar/guitar_PNG3369.png",
+                            "width": "300",
+                          },
+                          "children": Array [],
+                          "name": "img",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "alt": undefined,
+                            "height": undefined,
+                            "src": undefined,
+                            "width": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "alt": undefined,
+                            "height": undefined,
+                            "src": undefined,
+                            "width": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                  Node {
+                    "attribs": Object {
+                      "class": "product__button button button_outline",
+                      "type": "button",
+                    },
+                    "children": Array [
+                      Node {
+                        "data": "Add to cart",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "button",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": Node {
+                      "attribs": Object {
+                        "class": "product__content",
+                      },
+                      "children": Array [
+                        Node {
+                          "attribs": Object {
+                            "class": "product__name",
+                          },
+                          "children": Array [
+                            Node {
+                              "data": "Fender",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "h2",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": Node {
+                            "attribs": Object {
+                              "class": "product__price",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "2000 $",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "div",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": [Circular],
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                        Node {
+                          "attribs": Object {
+                            "class": "product__price",
+                          },
+                          "children": Array [
+                            Node {
+                              "data": "2000 $",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "div",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": Node {
+                            "attribs": Object {
+                              "class": "product__name",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "Fender",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "h2",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": [Circular],
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": Node {
+                        "attribs": Object {
+                          "class": "product__thumb",
+                        },
+                        "children": Array [
+                          Node {
+                            "attribs": Object {
+                              "alt": "Fender",
+                              "height": "400",
+                              "src": "http://pngimg.com/uploads/guitar/guitar_PNG3369.png",
+                              "width": "300",
+                            },
+                            "children": Array [],
+                            "name": "img",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "alt": undefined,
+                              "height": undefined,
+                              "src": undefined,
+                              "width": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "alt": undefined,
+                              "height": undefined,
+                              "src": undefined,
+                              "width": undefined,
+                            },
+                          },
+                        ],
+                        "name": "div",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "type": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "type": undefined,
+                    },
+                  },
+                ],
+                "name": "li",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": Node {
+                  "attribs": Object {
+                    "class": "catalog__item product",
+                  },
+                  "children": Array [
+                    Node {
+                      "attribs": Object {
+                        "class": "product__thumb",
+                      },
+                      "children": Array [
+                        Node {
+                          "attribs": Object {
+                            "alt": "TAKAMINE",
+                            "height": "400",
+                            "src": "http://pngimg.com/uploads/guitar/guitar_PNG3350.png",
+                            "width": "300",
+                          },
+                          "children": Array [],
+                          "name": "img",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "alt": undefined,
+                            "height": undefined,
+                            "src": undefined,
+                            "width": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "alt": undefined,
+                            "height": undefined,
+                            "src": undefined,
+                            "width": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": Node {
+                        "attribs": Object {
+                          "class": "product__content",
+                        },
+                        "children": Array [
+                          Node {
+                            "attribs": Object {
+                              "class": "product__name",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "TAKAMINE",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "h2",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": Node {
+                              "attribs": Object {
+                                "class": "product__price",
+                              },
+                              "children": Array [
+                                Node {
+                                  "data": "2000 $",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "text",
+                                },
+                              ],
+                              "name": "div",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": [Circular],
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "class": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "class": undefined,
+                              },
+                            },
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          Node {
+                            "attribs": Object {
+                              "class": "product__price",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "2000 $",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "div",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": Node {
+                              "attribs": Object {
+                                "class": "product__name",
+                              },
+                              "children": Array [
+                                Node {
+                                  "data": "TAKAMINE",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "text",
+                                },
+                              ],
+                              "name": "h2",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": [Circular],
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "class": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "class": undefined,
+                              },
+                            },
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                        ],
+                        "name": "div",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": Node {
+                          "attribs": Object {
+                            "class": "product__button button button_outline",
+                            "type": "button",
+                          },
+                          "children": Array [
+                            Node {
+                              "data": "Add to cart",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "button",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": [Circular],
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                            "type": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                            "type": undefined,
+                          },
+                        },
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    Node {
+                      "attribs": Object {
+                        "class": "product__content",
+                      },
+                      "children": Array [
+                        Node {
+                          "attribs": Object {
+                            "class": "product__name",
+                          },
+                          "children": Array [
+                            Node {
+                              "data": "TAKAMINE",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "h2",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": Node {
+                            "attribs": Object {
+                              "class": "product__price",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "2000 $",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "div",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": [Circular],
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                        Node {
+                          "attribs": Object {
+                            "class": "product__price",
+                          },
+                          "children": Array [
+                            Node {
+                              "data": "2000 $",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "div",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": Node {
+                            "attribs": Object {
+                              "class": "product__name",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "TAKAMINE",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "h2",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": [Circular],
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": Node {
+                        "attribs": Object {
+                          "class": "product__button button button_outline",
+                          "type": "button",
+                        },
+                        "children": Array [
+                          Node {
+                            "data": "Add to cart",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "button",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                          "type": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                          "type": undefined,
+                        },
+                      },
+                      "parent": [Circular],
+                      "prev": Node {
+                        "attribs": Object {
+                          "class": "product__thumb",
+                        },
+                        "children": Array [
+                          Node {
+                            "attribs": Object {
+                              "alt": "TAKAMINE",
+                              "height": "400",
+                              "src": "http://pngimg.com/uploads/guitar/guitar_PNG3350.png",
+                              "width": "300",
+                            },
+                            "children": Array [],
+                            "name": "img",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "alt": undefined,
+                              "height": undefined,
+                              "src": undefined,
+                              "width": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "alt": undefined,
+                              "height": undefined,
+                              "src": undefined,
+                              "width": undefined,
+                            },
+                          },
+                        ],
+                        "name": "div",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    Node {
+                      "attribs": Object {
+                        "class": "product__button button button_outline",
+                        "type": "button",
+                      },
+                      "children": Array [
+                        Node {
+                          "data": "Add to cart",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "button",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": Node {
+                        "attribs": Object {
+                          "class": "product__content",
+                        },
+                        "children": Array [
+                          Node {
+                            "attribs": Object {
+                              "class": "product__name",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "TAKAMINE",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "h2",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": Node {
+                              "attribs": Object {
+                                "class": "product__price",
+                              },
+                              "children": Array [
+                                Node {
+                                  "data": "2000 $",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "text",
+                                },
+                              ],
+                              "name": "div",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": [Circular],
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "class": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "class": undefined,
+                              },
+                            },
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          Node {
+                            "attribs": Object {
+                              "class": "product__price",
+                            },
+                            "children": Array [
+                              Node {
+                                "data": "2000 $",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "div",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": Node {
+                              "attribs": Object {
+                                "class": "product__name",
+                              },
+                              "children": Array [
+                                Node {
+                                  "data": "TAKAMINE",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "text",
+                                },
+                              ],
+                              "name": "h2",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": [Circular],
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "class": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "class": undefined,
+                              },
+                            },
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                        ],
+                        "name": "div",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": Node {
+                          "attribs": Object {
+                            "class": "product__thumb",
+                          },
+                          "children": Array [
+                            Node {
+                              "attribs": Object {
+                                "alt": "TAKAMINE",
+                                "height": "400",
+                                "src": "http://pngimg.com/uploads/guitar/guitar_PNG3350.png",
+                                "width": "300",
+                              },
+                              "children": Array [],
+                              "name": "img",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "alt": undefined,
+                                "height": undefined,
+                                "src": undefined,
+                                "width": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "alt": undefined,
+                                "height": undefined,
+                                "src": undefined,
+                                "width": undefined,
+                              },
+                            },
+                          ],
+                          "name": "div",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": [Circular],
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                        "type": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                        "type": undefined,
+                      },
+                    },
+                  ],
+                  "name": "li",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+            ],
+            "name": "ul",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+            },
+          },
+        ],
+        "name": "div",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+        },
+      },
+    ],
+    "name": "div",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": Node {
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+    },
+    "prev": null,
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "xml": false,
+  },
+}
+`;

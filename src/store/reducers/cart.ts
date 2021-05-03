@@ -65,12 +65,15 @@ const priceTotal = (allProduct: IProductProps[]): number => {
 }
 
 const createProduct = (state: ICartState, product: IProductProps): ICartState => {
+
+    const newItems = [
+        product,
+        ...state.cartItems,
+    ];
     return {
-        ...state,
-        cartItems: [
-            product,
-            ...state.cartItems,
-        ]
+        cartItems: newItems,
+        orderTotal: orderTotal(newItems),
+        priceTotal: priceTotal(newItems),
     }
 }
 

@@ -3,13 +3,25 @@ import {IProductProps} from "../types/productItem";
 
 interface ICartItemProps {
     product: IProductProps;
-    handlerIncrement: () => void;
-    handlerRemover: () => void;
-    handlerAllRemover: () => void;
+    handlerIncrement: (product: IProductProps) => void;
+    handlerRemover: (product: IProductProps) => void;
+    handlerAllRemover: (product: IProductProps) => void;
 }
 
 const CartItem: React.FC<ICartItemProps> = ({product, handlerIncrement, handlerRemover, handlerAllRemover}) => {
     const {img, price, quantity, name} = product;
+
+    const onAddProduct = (): void => {
+        handlerIncrement(product)
+    }
+
+    const onRemoverProduct = (): void => {
+        handlerRemover(product)
+    }
+
+    const onAllRemoverProduct = (): void => {
+        handlerAllRemover(product)
+    }
 
     return (
         <li className="cart__item">
@@ -20,7 +32,8 @@ const CartItem: React.FC<ICartItemProps> = ({product, handlerIncrement, handlerR
                 <h3>{name}</h3>
             </div>
             <div className="cart__item-count">
-                <button type="button" onClick={handlerRemover} className="button button_outline button_circle cart__item-count-removed">
+                <button type="button" onClick={onRemoverProduct}
+                        className="button button_outline button_circle cart__item-count-removed">
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -33,7 +46,8 @@ const CartItem: React.FC<ICartItemProps> = ({product, handlerIncrement, handlerR
 
                 </button>
                 <strong>{quantity}</strong>
-                <button type="button"  onClick={handlerIncrement} className="button button_outline button_circle cart__item-count-add">
+                <button type="button" onClick={onAddProduct}
+                        className="button button_outline button_circle cart__item-count-add">
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -50,7 +64,7 @@ const CartItem: React.FC<ICartItemProps> = ({product, handlerIncrement, handlerR
                 <strong>{price} $</strong>
             </div>
             <div className="cart__item-remove">
-                <button type="button" onClick={handlerAllRemover} className="button button_outline button_circle">
+                <button type="button" onClick={onAllRemoverProduct} className="button button_outline button_circle">
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path

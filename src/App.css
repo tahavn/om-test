@@ -637,6 +637,11 @@ h2, h3 {
   opacity: 0;
   color: transparent;
 }
+.form__error {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #ff0000;
+}
 .form__button {
   min-width: 120px;
   font-size: 18px;

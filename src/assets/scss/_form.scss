@@ -77,6 +77,12 @@
     }
   }
 
+  &__error {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #ff0000;
+  }
+
   &__button {
     min-width: 120px;
     font-size: 18px;

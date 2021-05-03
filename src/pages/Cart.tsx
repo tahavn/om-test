@@ -78,9 +78,9 @@ const Cart: React.FC = () => {
                         {
                             cartItems.map(product => (
                                 <CartItem
-                                    handlerIncrement={() => onAddProduct(product)}
-                                    handlerRemover={() => onRemoverProduct(product)}
-                                    handlerAllRemover={() => onAllRemoverProduct(product)}
+                                    handlerIncrement={onAddProduct}
+                                    handlerRemover={onRemoverProduct}
+                                    handlerAllRemover={onAllRemoverProduct}
                                     product={product}
                                     key={product.id}
                                 />
@@ -88,8 +88,8 @@ const Cart: React.FC = () => {
                         }
                     </ul>
                     <div className="cart__footer">
-                        <span> Total order: <strong>{orderTotal}</strong> </span>
-                        <span> Total price: <strong>{priceTotal} $</strong> </span>
+                        <span> Total order: <strong className="cart__total-order">{orderTotal}</strong> </span>
+                        <span> Total price: <strong className="cart__total-price">{priceTotal} $</strong> </span>
                     </div>
                 </div>
 
