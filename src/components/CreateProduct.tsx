@@ -32,7 +32,7 @@ const CreateProduct: React.FC = () => {
                 price: +price,
                 quantity: 1
             }
-            dispatch(updateProducts(product));
+            // dispatch(updateProducts(product));
             dispatch(createProduct(product));
             setName('');
             setPrice('');
