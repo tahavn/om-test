@@ -27,7 +27,7 @@ const CreateProduct: React.FC = () => {
 
     const handlerChangeName = (e: ChangeEvent<HTMLInputElement>): void => {
         const value = e.target.value;
-        setName(value);
+        setName(value.trim());
         setError(false);
     }
     const handlerChangePrice = (e: ChangeEvent<HTMLInputElement>): void => {
@@ -38,8 +38,7 @@ const CreateProduct: React.FC = () => {
 
     const handlerSubmit = (e: SyntheticEvent): void => {
         e.preventDefault();
-        if(+price <= 0) {
-            console.log(price)
+        if(price.length && +price <= 0) {
             setErrorText(errorMessages[1]);
             setError(true);
             return
