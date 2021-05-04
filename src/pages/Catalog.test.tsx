@@ -1,5 +1,5 @@
-import React, {useEffect} from "react";
-import {shallow, render, configure} from "enzyme";
+import React from "react";
+import {render, configure} from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import configureMockStore from 'redux-mock-store';
 import thunk from "redux-thunk";

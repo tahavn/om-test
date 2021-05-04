@@ -2,14 +2,28 @@ import React, {ChangeEvent, SyntheticEvent, useState} from "react";
 import {useDispatch} from "react-redux";
 import {IProductProps} from "../types/productItem";
 import {createProduct} from "../store/actions/cart";
-import {updateProducts} from "../store/actions/products";
+// import {updateProducts} from "../store/actions/products";
 import defaultImg from "../assets/image/default.png"
+
+interface IErrorMessageProps {
+    message: string
+}
+
+const ErrorMessage: React.FC<IErrorMessageProps> = ({message}) => {
+    return (
+        <div className="form__error">{message}</div>
+    )
+}
 
 const CreateProduct: React.FC = () => {
     const [name, setName] = useState<string>('');
     const [price, setPrice] = useState<string>('');
     const [error, setError] = useState<boolean>(false);
     const dispatch = useDispatch();
+
+    const [errorText, setErrorText] = useState<string>('');
+    const errorMessages: string[] = ['All fields must be filled.', 'The price must be greater than 0.'];
+    // let currentMessage: string = '';
 
     const handlerChangeName = (e: ChangeEvent<HTMLInputElement>): void => {
         const value = e.target.value;
@@ -24,6 +38,12 @@ const CreateProduct: React.FC = () => {
 
     const handlerSubmit = (e: SyntheticEvent): void => {
         e.preventDefault();
+        if(+price <= 0) {
+            console.log(price)
+            setErrorText(errorMessages[1]);
+            setError(true);
+            return
+        }
         if (name.length && price.length) {
             const product: IProductProps = {
                 id: name.trim() + Date.now(),
@@ -37,6 +57,7 @@ const CreateProduct: React.FC = () => {
             setName('');
             setPrice('');
         } else {
+            setErrorText(errorMessages[0]);
             setError(true);
         }
     }
@@ -69,7 +90,7 @@ const CreateProduct: React.FC = () => {
                     </label>
                 </div>
             </div>
-            {error && <div className="form__error">All fields must be filled.</div>}
+            {error && <ErrorMessage message={errorText} />}
             <button type="submit" className="form__button button">Submit</button>
         </form>
     )

@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import {render, configure, shallow} from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import configureMockStore from 'redux-mock-store';
